@@ -1,0 +1,26 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Certifications from "@/components/Certifications";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-[#f5f5f0]">
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Projects />
+      <Certifications />
+      <Experience />
+      <Education />
+      <Contact />
+      <Footer />
+    </main>
+  );
+}
