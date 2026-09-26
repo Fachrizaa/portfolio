@@ -235,132 +235,217 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* ================= RIGHT HERO ================= */}
+        {/* ================= RIGHT / PHOTO ================= */}
+
         <div
           className="
     relative
-    hidden
-    min-h-[520px]
+    flex
+    min-h-[480px]
     items-center
     justify-center
     overflow-hidden
+    border-t-[3px]
+    border-black
     bg-pink-400
-    p-10
-    lg:flex
+    px-6
+    py-12
+
+    sm:min-h-[520px]
+    sm:p-10
+
+    lg:min-h-[520px]
+    lg:border-l-[3px]
+    lg:border-t-0
   "
         >
-          {/* BACKGROUND DECORATION */}
+          {/* ================= GREEN BACKGROUND ================= */}
+
           <div
             className="
       absolute
-      left-[12%]
+      left-[15%]
       top-[12%]
-      h-[280px]
-      w-[280px]
+      h-[250px]
+      w-[220px]
       rotate-[-6deg]
       border-[3px]
       border-black
       bg-lime-300
+
+      sm:left-[20%]
+      sm:h-[290px]
+      sm:w-[260px]
+
+      lg:left-[12%]
+      lg:h-[280px]
+      lg:w-[280px]
     "
           />
 
-          {/* SMALL DECORATION */}
+          {/* ================= YELLOW DECORATION ================= */}
+
           <div
             className="
       absolute
-      right-[10%]
-      top-[15%]
-      h-12
-      w-12
+      right-[8%]
+      top-[10%]
+      h-10
+      w-10
       rotate-12
       border-[3px]
       border-black
       bg-yellow-300
+
+      sm:h-12
+      sm:w-12
+
+      lg:right-[10%]
+      lg:top-[15%]
     "
           />
 
-          {/* PHOTO WRAPPER */}
+          {/* ================= SMALL DECORATION ================= */}
+
           <div
             className="
-            relative
-            z-10
-            -translate-y-6
-            rotate-[3deg]
-            transition-transform
-            hover:-translate-y-3
-            hover:rotate-0
-            "
+      absolute
+      bottom-[25%]
+      left-[8%]
+      h-8
+      w-8
+      -rotate-12
+      border-[3px]
+      border-black
+      bg-violet-600
+    "
+          />
+
+          {/* ================= PROFILE PHOTO ================= */}
+
+          <div
+            className="
+      relative
+      z-10
+      -translate-y-8
+      rotate-[3deg]
+
+      sm:-translate-y-10
+    "
           >
             <div
               className="
-                h-[330px]
-                w-[270px]
-                overflow-hidden
-                border-[4px]
-                border-black
-                bg-white
-                shadow-[8px_8px_0_#000]
-            "
+        h-[280px]
+        w-[220px]
+        overflow-hidden
+        border-[4px]
+        border-black
+        bg-white
+        shadow-[7px_7px_0_#000]
+
+        sm:h-[330px]
+        sm:w-[270px]
+
+        lg:h-[330px]
+        lg:w-[270px]
+      "
             >
               <Image
                 src="/image/profile.jpeg"
                 alt="Reza - Software Developer"
                 width={270}
                 height={330}
-                className="h-full w-full object-cover object-top"
+                className="
+          h-full
+          w-full
+          object-cover
+          object-top
+        "
                 priority
               />
             </div>
           </div>
 
-          {/* CODE CARD */}
+          {/* ================= CODE CARD ================= */}
+
           <div
             className="
-                absolute
-                bottom-[35px]
-                left-1/2
-                z-20
-                w-[350px]
-                -translate-x-1/2
-                rotate-[-2deg]
-                border-[3px]
-                border-black
-                bg-violet-600
-                p-5
-                font-mono
-                text-xs
-                text-white
-                shadow-[7px_7px_0_#000]
-                transition-transform
-                hover:-translate-y-1
-                hover:rotate-0
-              "
+      absolute
+      bottom-[25px]
+      left-1/2
+      z-20
+      w-[85%]
+      max-w-[340px]
+      -translate-x-1/2
+      rotate-[-2deg]
+      border-[3px]
+      border-black
+      bg-violet-600
+      p-4
+      font-mono
+      text-[10px]
+      text-white
+      shadow-[6px_6px_0_#000]
+
+      sm:bottom-[30px]
+      sm:max-w-[350px]
+      sm:p-5
+      sm:text-xs
+
+      lg:bottom-[35px]
+    "
           >
-            <p>
-              <span className="text-yellow-300">const</span>{" "}
-              <span className="text-white">developer</span> = {"{"}
-            </p>
+            {/* HEADER */}
 
-            <p className="pl-5">
-              name: <span className="text-lime-300">&quot;Reza&quot;</span>,
-            </p>
+            <div
+              className="
+        mb-3
+        flex
+        items-center
+        justify-between
+        border-b
+        border-violet-400
+        pb-2
+      "
+            >
+              <span className="font-bold">developer.ts</span>
 
-            <p className="pl-5">
-              role:{" "}
-              <span className="text-lime-300">
-                &quot;Software Developer&quot;
-              </span>
-              ,
-            </p>
+              <div className="flex gap-1">
+                <span className="h-2 w-2 rounded-full bg-red-400" />
+                <span className="h-2 w-2 rounded-full bg-yellow-300" />
+                <span className="h-2 w-2 rounded-full bg-lime-300" />
+              </div>
+            </div>
 
-            <p className="pl-5">
-              passion:{" "}
-              <span className="text-lime-300">
-                &quot;Building Great Products&quot;
-              </span>
-            </p>
+            {/* CODE */}
 
-            <p>{"}"}</p>
+            <div className="space-y-1">
+              <p>
+                <span className="text-pink-300">const</span> developer = {"{"}
+              </p>
+
+              <p className="pl-4">
+                name:{" "}
+                <span className="text-lime-300">&quot;Fachriza&quot;</span>,
+              </p>
+
+              <p className="pl-4">
+                role:{" "}
+                <span className="text-lime-300">
+                  &quot;Software Developer&quot;
+                </span>
+                ,
+              </p>
+
+              <p className="pl-4">
+                passion:{" "}
+                <span className="text-lime-300">
+                  &quot;Building Things&quot;
+                </span>
+              </p>
+
+              <p>{"};"}</p>
+            </div>
           </div>
         </div>
       </div>
