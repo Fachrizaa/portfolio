@@ -1,3 +1,4 @@
+
 type Project = {
   project_id: string;
   title: string;
@@ -19,7 +20,7 @@ export const projects: Project[] = [
     status: "finished",
     image: "/image/projects/web_builder.png",
     description:
-      "Platform berbasis web yang memungkinkan pengguna membuat situs web secara instan melalui pemilihan tampilan yang tersedia tanpa memerlukan keahlian pemrograman.",
+      "A web-based platform that allows users to instantly create websites by selecting from available templates without requiring any programming skills.",
   },
 
   {
@@ -31,7 +32,7 @@ export const projects: Project[] = [
     status: "undeploy",
     image: "/image/projects/penjualan_batik.png",
     description:
-      "Website e-commerce untuk penjualan batik, dengan proses transaksi melalui pengiriman bukti transfer sebagai metode pembayaran utama.",
+      "An e-commerce website for selling batik products, featuring a transaction process where customers submit proof of bank transfer as the primary payment method.",
   },
 
   {
@@ -43,7 +44,7 @@ export const projects: Project[] = [
     status: "finished",
     image: "/image/projects/goods_warehouse.png",
     description:
-      "Sistem manajemen pergudangan berbasis Laravel dan SQL dengan autentikasi, dashboard, CRUD produk, log aktivitas pengguna, transaksi, dan perhitungan moving average untuk pengelolaan stok.",
+      "A warehouse management system built with Laravel and SQL, featuring authentication, a dashboard, product CRUD operations, user activity logs, transactions, and moving average calculations for inventory management.",
   },
 
   {
@@ -55,7 +56,7 @@ export const projects: Project[] = [
     status: "undeploy",
     image: "/image/projects/management_safety.png",
     description:
-      "Website informasi keselamatan kerja untuk pekerja lapangan yang dilengkapi sistem pelaporan kerusakan agar pekerja dapat melaporkan masalah secara langsung kepada atasan.",
+      "An occupational safety information website for field workers, equipped with a damage reporting system that allows workers to directly report issues to their supervisors.",
   },
 
   {
@@ -67,7 +68,7 @@ export const projects: Project[] = [
     status: "finished",
     image: "/image/projects/myedisi.png",
     description:
-      "Pengembangan landing page untuk perusahaan MyEdisi. Tampilan dan fungsionalitas situs kemudian mengalami sejumlah perubahan dan penyesuaian oleh perusahaan.",
+      "Development of a landing page for MyEdisi. The website's design and functionality were subsequently modified and adjusted by the company.",
   },
 
   {
@@ -79,7 +80,7 @@ export const projects: Project[] = [
     status: "undeploy",
     image: "/image/projects/bpkad.png",
     description:
-      "Pengembangan frontend landing page BPKAD Jawa Barat menggunakan Vue 3 dengan integrasi dan fetching data dari backend API.",
+      "Frontend development of the BPKAD West Java landing page using Vue 3, including backend API integration and data fetching.",
   },
 
   {
@@ -91,6 +92,18 @@ export const projects: Project[] = [
     status: "finished",
     image: "/image/projects/manual_qa.png",
     description:
-      "Pengujian manual pada fitur login, pengajuan, verifikasi, penerbitan SP2D, serta validasi alur berbasis peran Operator dan Verifikator. Pengujian didokumentasikan melalui test scenario, hasil pengujian, dan temuan masalah.",
+      "Manual testing of login, submission, verification, SP2D issuance, and role-based workflow validation for Operator and Verifier roles. Testing activities were documented through test scenarios, test results, and identified issues.",
+  },
+
+  {
+    project_id: "1f2e3c4-5b6a-4d7e-8f9a-0b1c2d3e4f5g",
+    title: "Anime Website",
+    language: "Next JS",
+    type: "Website",
+    link: "-",
+    status: "undeploy",
+    image: "/image/projects/rezzkai.png",
+    description:
+      "A website developed using Next.js for anime streaming, utilizing the Wajik-Anime API to retrieve anime content.",
   },
 ];
